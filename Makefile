@@ -16,9 +16,9 @@ init:
 	pipenv install --dev --skip-lock
 
 test:
-	pipenv run yapf -irp example tests
-	pipenv run flake8 --max-line-length=120 example tests
-	pipenv run pytest --junitxml=pytest.xml --cov-config .coveragerc --cov example --cov-report term
+	pipenv run yapf -irp flask-example tests
+	pipenv run flake8 --max-line-length=120 flask-example tests
+	pipenv run pytest --junitxml=pytest.xml --cov-config .coveragerc --cov flask-example --cov-report term
 
 serve:
 	FLASK_APP=hello.pytest pipenv run flask run
