@@ -21,4 +21,4 @@ test:
 	pipenv run pytest --junitxml=pytest.xml --cov-config .coveragerc --cov flask-example --cov-report term
 
 serve:
-	FLASK_APP=hello.pytest pipenv run flask run
+	FLASK_APP=hello.py pipenv run flask run
